@@ -38,6 +38,21 @@ a {
     text-decoration: none;
 }
 
+.section__heading {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #10375c;
+}
+
+.section__desc {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #575f66;
+}
+
 /* ! mot so cai ma muon no thay doi theo mong muon nen dung em  */
 .logo {
     font-size: 1rem;
@@ -204,4 +219,88 @@ a {
     width: 210px;
     height: 410px;
     margin-left: -6px;
+}
+
+/* service */
+.service {
+    padding-top: 170px;
+}
+
+.service__desc,
+.service__heading {
+    text-align: center;
+}
+
+.service__desc {
+    width: 468px;
+    margin: 18px auto 0;
+}
+
+.service__row {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service__img {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.service__list .btn {
+    width: 205px;
+    margin-top: 55px;
+}
+
+.service-item {
+    width: 470px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 22px;
+    display: flex;
+}
+
+.service-item:hover {
+    box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+.service-item:hover .service-item__icon {
+    background: #2e80ce;
+    color: #fff;
+    transition: all 0.2s ease-in;
+}
+
+.service-item__icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: #eff6fd;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    color: #10375c;
+}
+
+.service-item__body {
+    margin-left: 19px;
+}
+
+.service-item__heading {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.27;
+    color: #10375c;
+}
+
+.service-item__desc {
+    margin-top: 8px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #575f66;
 }
