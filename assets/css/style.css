@@ -53,6 +53,33 @@ a {
     color: #575f66;
 }
 
+.control {
+    display: flex;
+    gap: 0 18px;
+}
+
+.control__btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 100rem;
+    border: 1px solid #575f66;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: currentColor;
+    transition: 0.25s;
+}
+
+.control__btn:hover {
+    border-color: #2e80ce;
+    background: #2e80ce;
+    color: #fff;
+}
+
+.control__btn-icon-next {
+    transform: rotate(180deg);
+}
+
 /* ! mot so cai ma muon no thay doi theo mong muon nen dung em  */
 .logo {
     font-size: 1rem;
@@ -462,37 +489,11 @@ a {
     font-weight: 300;
     font-size: 1.4rem;
     line-height: 1.68;
-
     color: #575f66;
 }
-
 .member__control {
+    justify-content: center;
     margin-top: 38px;
-    display: flex;
-    justify-content: center;
-    gap: 0 18px;
-}
-
-.member__control-btn {
-    width: 36px;
-    height: 36px;
-    border-radius: 100rem;
-    border: 1px solid #575f66;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: currentColor;
-    transition: 0.25s;
-}
-
-.member__control-btn:hover {
-    border-color: #2e80ce;
-    background: #2e80ce;
-    color: #fff;
-}
-
-.member__control-icon-next {
-    transform: rotate(180deg);
 }
 
 /* install */
@@ -534,4 +535,94 @@ a {
 .install__btn-img {
     width: 135px;
     height: 40px;
+}
+
+/* news */
+.news {
+    margin-top: 85px;
+    padding: 85px 0;
+}
+.news__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news__content {
+    flex-shrink: 0;
+}
+
+.news__heading {
+    max-width: 470px;
+}
+
+.news__more {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: #10375c;
+    margin: 28px 0;
+}
+
+.new__list {
+    max-width: 570px;
+    display: flex;
+    gap: 0 30px;
+}
+.news__item {
+    flex: 1;
+    background: #ffffff;
+    transition: 0.25;
+    overflow: hidden;
+}
+
+.news__item:hover {
+    box-shadow: 0px 18px 50px rgba(0, 0, 0, 0.05);
+}
+.news__item:hover .news__item-body {
+    border-color: #fff;
+}
+.news__item:hover .news__item-more {
+    color: #2e80ce;
+}
+
+.news__item-thumb {
+    width: 100%;
+    height: 172px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px 12px 0 0;
+}
+
+.news__item-body {
+    border: 1px solid #e8ebee;
+    padding: 22px;
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    transition: 0.25;
+}
+
+.news__item-heading {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.62;
+    color: #10375c;
+}
+
+.news__item-desc {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #575f66;
+    margin: 10px 0 12px;
+}
+
+.news__item-more {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #10375c;
+    display: inline-block;
+    line-height: 1.4;
 }
