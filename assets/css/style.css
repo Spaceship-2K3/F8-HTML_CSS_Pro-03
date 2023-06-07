@@ -626,3 +626,34 @@ a {
     display: inline-block;
     line-height: 1.4;
 }
+
+/* .appointment */
+.appointment {
+    margin-top: 85px;
+    margin-bottom: 170px;
+}
+
+.appointment-wrap {
+    background: #f7fbff;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.appointment__desc {
+    width: 617px;
+    position: relative;
+    margin: 38px 0;
+}
+.appointment__desc::before {
+    content: "";
+    position: absolute;
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -18px;
+}
